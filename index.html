@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Non-reference docs for developer documentation</title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/beige.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <style>
+            p.alignLeft {
+            text-align: left;
+            }
+            span.orange, a.orange {
+            color: orange;
+            outline-color: gray;
+            }
+            div.innovation ul li {
+            margin-bottom:12px;
+            font-size: .9em;
+            }
+            figcaption {
+            font-size:12px;
+            }
+            .reveal p.miscItems, p, li {
+            font-size:.8em;
+            }
+            .slides section h3 {
+            color: #f19132 !important; outline: darkorange;
+            margin:0px;
+            /*padding-top: 80px;*/
+            font-size: 1.8em;
+            text-transform: none;
+            }
+            .slides img {
+            max-width: 80%;
+            max-height: 80%;
+            border:3px solid red;
+            }
+            #upcoming-slide .label {
+            color: #444 !important
+            }
+            ul.credits li {
+            font-size: .6em;
+            }
+            .reveal section h3 {
+            margin:0px;
+            }
+            .reveal section img {
+            margin-bottom:0px;
+            }
+            .reveal li {
+            margin: 20px 0px;
+            font-size: 1em;
+            }
+            span.strategy {
+            border: 1px solid #dedede;
+            padding: 4px 6px;
+            border-radius: 8px;
+            }
+            span.myname {
+            font-weight: bold;
+            font-size: 52px;
+            color: #555;
+            font-family: palatino
+            }
+            .reveal pre code, pre {
+            padding:20px;
+            background-color: #3f3f3f;
+            }
+            .reveal img {
+            background-color: white !important;
+            }
+            .reveal div.imageFit {
+            max-width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="reveal innovation">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+        <section>
+            <h1>Non-reference content for API documentation</h1>
+            <p>
+                <small>By Tom Johnson / <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br/>
+                <a target="_blank" href="http://idratherbewriting.com">idratherbewriting.com</a></small><br/><br/>
+            <p><small>Slides available at <br/><a target="_blank" href="http://idratherbewriting.com/openapi-and-swagger/index.html#/">idratherbewriting.com/openapi-and-swagger</a></small></p>
+            </p>
+        </section>
+         <!-- <section>
+            <h2>Video recording</h2>
+            <p><small>The following is a video recording of this presentation. </small></p>
+            <p><iframe width="640" height="360" src="https://www.youtube.com/embed/gcDSL-8pkvU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+            </section> -->
+
+
+            <section>
+              <h2>What to call this content</h2>
+              <p>Non-reference content &bull; conceptual information &bull; tutorials  &bull; how-to guides  &bull; programming guides  &bull; administratrive information  &bull; developer portal &bull; user guide </p>
+            </section>
+
+        <section>
+            <h2>What I'll talk about</h2>
+            <ul style="font-size: 90%; padding: 20px; float: left;">
+                <li>Overviews</li>
+                <li>Getting started</li>
+                <li>Authentication and authorization</li>
+                <li>Status and error codes</li>
+                <li>Rate limiting and thresholds</li>
+                <li>Code samples and tutorials</li>
+              </ul>
+              <ul style="font-size: 90%; padding: 20px; float: left;">
+              <li>SDKs and sample apps</li>
+              <li>Quick reference</li>
+              <li>Troubleshooting</li>
+              <li>Glossary</li>
+              <li>FAQs</li>
+          </ul>
+
+        </section>
+        <section>
+            <h2>Where to find more information</h2>
+            <figure>
+                <a target="_blank" href="http://idratherbewriting.com/learnapidoc/"><img class="shortened" src="media/rasters/learnapidocsite.png"/></a>
+                <figcaption><a target="_blank" href="http://idratherbewriting.com/learnapidoc/restapispecifications.html">idratherbewriting.com/learnapidoc</a></figcaption>
+            </figure>
+        </section>
+
+        <section>
+          <h2>Overview</h2>
+          <img src="media/vectors/nonref-docs-preso_overview.svg"/>
+        </section>
+
+        <section>
+          <h2>Getting started</h2>
+          <a href="https://console.bluemix.net/docs/services/watson/index.html#about"><img src="media/vectors/nonref-docs-preso_gettingstarted.svg"/></a>
+        </section>
+
+<section>
+        <section>
+          <h2>Authorization and authentication</h2>
+          <img src="media/vectors/nonref-docs-preso_authenticationauthorization.svg"/>
+        </section>
+        <section>
+          <h3>API Key</h3>
+          <img src="media/vectors/nonref-docs-preso_apikey.svg"/>
+        </section>
+
+        <section>
+          <h3>HMAC</h3>
+          <img src="media/vectors/nonref-docs-preso_hmac.svg"/>
+        </section>
+
+        <section>
+          <h3>OAUTH</h3>
+          <img src="media/vectors/nonref-docs-preso_oauth.svg"/>
+        </section>
+
+      </section>
+
+        <section>
+          <h2>Status and error codes</h2>
+          <img src="media/vectors/nonref-docs-preso_statuserrorcodes.svg"/>
+        </section>
+
+        <section>
+          <h2>Rate limiting and thresholds</h2>
+          <img src="media/vectors/nonref-docs-preso_ratelimiting.svg"/>
+        </section>
+
+        <section>
+          <h2>Code samples and tutorials</h2>
+          <img src="media/vectors/nonref-docs-preso_codetutorial.svg"/>
+        </section>
+
+        <section>
+          <h2>SDKs and sample apps</h2>
+          <img src="media/vectors/nonref-docs-preso_sampleappsandsdks.svg"/>
+        </section>
+
+        <section>
+          <h2>Quick reference</h2>
+          <img src="media/vectors/nonref-docs-preso_quickreference.svg"/>
+        </section>
+
+        <section>
+          <h2>Troubleshooting</h2>
+          <img src="media/vectors/nonref-docs-preso_troubleshooting.svg"/>
+        </section>
+
+        <section>
+          <h2>Glossary</h2>
+          <img src="media/vectors/nonref-docs-preso_glossary.svg"/>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <img src="media/vectors/nonref-docs-preso_faq.svg"/>
+        </section>
+
+        <section>
+            <h2>Questions?</h2>
+            <img src="media/vectors/questions-01.svg"/>
+        </section>
+        <section>
+            <h1>The end</h1>
+            <div>
+            <div style="float:left; padding: 10px;">
+                <img src="media/rasters/tomjohnson.jpg"/>
+            </div>
+            <div style="float:left; padding: 10px; text-align: left;">
+                <p><span class="myname">Tom Johnson</span><br/>
+                    &mdash; <a target="_blank" href="http://idratherbewriting.com">idratherbewriting.com</a><br/>
+                    &mdash;  <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br />
+                    &mdash; <a target="_blank" href="mailto:tom@idratherbewriting.com">tom@idratherbewriting.com</a>
+                </p>
+            </div>
+        </section>
+        <section>
+          <h2>Credits</h2>
+          <p>Some graphics by: <a href="https://www.vecteezy.com">Vecteezy.com</a> and the <a href="https://thenounproject.com/">Noun Project</a>.</p>
+        </section>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                 history: true,
+                 center: false,
+                 progress: true,
+                 slideNumber: true,
+            	dependencies: [
+            		{ src: 'plugin/markdown/marked.js' },
+            		{ src: 'plugin/markdown/markdown.js' },
+            		{ src: 'plugin/notes/notes.js', async: true },
+            		{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            	]
+            });
+        </script>
+    </body>
+</html>
