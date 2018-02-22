@@ -96,7 +96,7 @@
             <p>
                 <small>By Tom Johnson / <a target="_blank" href="http://twitter.com/tomjohnson">@tomjohnson</a><br/>
                 <a target="_blank" href="http://idratherbewriting.com">idratherbewriting.com</a></small><br/><br/>
-            <p><small>Slides available at <br/><a target="_blank" href="http://idratherbewriting.com/openapi-and-swagger/index.html#/">idratherbewriting.com/openapi-and-swagger</a></small></p>
+            <p><small>Slides available at <br/><a target="_blank" href="http://idratherbewriting.com/nonref-content-api-docs/#/">idratherbewriting.com/nonref-content-api-docs</a></small></p>
             </p>
 
             <aside class="notes">
@@ -115,21 +115,28 @@
             </section> -->
         <section>
             <h2>What I'll talk about</h2>
-            <ul style="font-size: 90%; padding: 20px; float: left;">
+            <div class="bothSections">
+            <div class="firstSection" style="font-size: 90%; padding: 20px; padding-right: 30px; float: left; max-width: 400px">
+            <ol>
                 <li>Overviews</li>
                 <li>Getting started</li>
                 <li>Authentication and authorization</li>
                 <li>Status and error codes</li>
                 <li>Rate limiting and thresholds</li>
+
+              </ol>
+            </div>
+            <div class="secondSection" style="font-size: 90%; padding: 20px; padding-top:10px; float: left;">
+              <ol style="font-size: 90%; padding: 20px; float: left; max-width: 400px" start=6>
                 <li>Code samples and tutorials</li>
-              </ul>
-              <ul style="font-size: 90%; padding: 20px; float: left;">
               <li>SDKs and sample apps</li>
               <li>Quick reference</li>
-              <li>Troubleshooting</li>
+              <li>Best practices with the API</li>
               <li>Glossary</li>
               <li>FAQs</li>
-          </ul>
+          </ol>
+        </div>
+      </div>
 
           <aside class="notes">
             <ul>
@@ -148,33 +155,59 @@
         </section>
 
         <section>
-          <h2>Overview</h2>
-          <figure><img src="media/vectors/nonref-docs-preso_overview.svg"/><figcaption><small>Examples: <a href="https://developer.lyft.com/docs/overview">Lyft</a> | <a href="https://sendgrid.com/docs/User_Guide/index.html">Sendgrid</a></small></figcaption></figure>
+          <section>
+          <h2>1. Overview</h2>
+          <figure><img src="media/vectors/nonref-docs-preso_overview.svg"/><figcaption><small>Examples: <a target="_blank" href="https://developer.lyft.com/docs/overview">Lyft</a> | <a target="_blank" href="https://sendgrid.com/docs/User_Guide/index.html">Sendgrid</a> | <a target="_blank" href="https://console.bluemix.net/docs/services/conversation/index.html#about">IBM Cloud</a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
             </ul>
           </aside>
         </section>
+        <section>
+          <h3>Address the "why"</h3>
+          <blockquote>“Startups fail when they are not solving a market problem. We were not solving a large enough problem that we could universally serve with a scalable solution. We had great technology, great data on shopping behavior, great reputation as a thought leader, great expertise, great advisors, etc, but what we didn’t have was technology or business model that solved a pain point in a scalable way.” <small>&mdash; Treehouse Logic, <a href="https://www.cbinsights.com/research/startup-failure-reasons-top/">The Top 20 Reasons Startups Fail</a></small></blockquote>
+        </section>
+      </section>
 
         <section>
-          <h2>Getting started</h2>
-          <figure><img src="media/vectors/nonref-docs-preso_gettingstarted.svg"/></a><figcaption><small>Examples: <a href="https://developer.paypal.com/docs/api/overview/">Paypal</a> | <a href="https://console.bluemix.net/docs/services/watson/index.html#about">IBM Cloud</a> | <a href="https://developer.twitter.com/en/docs/basics/getting-started">Twitter</a> | <a href="https://developers.google.com/adsense/management/getting_started">Google Adsense</a><a href="https://developer.lyft.com/docs/getting-started">Lyft</a></small></figcaption></figure>
+          <section>
+          <h2>2. Getting started</h2>
+          <figure><img src="media/vectors/nonref-docs-preso_gettingstarted.svg"/></a><figcaption><small>Examples: <a target="_blank" href="https://developer.paypal.com/docs/api/overview/">Paypal</a> | <a target="_blank" href="https://console.bluemix.net/docs/services/watson/index.html#about">IBM Cloud</a> | <a target="_blank" href="https://developer.twitter.com/en/docs/basics/getting-started">Twitter</a> | <a target="_blank" href="https://developers.google.com/adsense/management/getting_started">Google Adsense</a><a target="_blank" href="https://developer.lyft.com/docs/getting-started">Lyft</a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
             </ul>
           </aside>
         </section>
+        <section>
+          <h3>Run in Postman</h3>
+          <a target="_blank" href="https://www.getpostman.com/api-network/"><img src="media/rasters/postmanapinetwork.png"/></a>
+<div style="clearfix"></div>
+  <div class="postman-run-button"
+  data-postman-action="collection/import"
+  data-postman-var-1="d1b7adeb50d95d9851e7"></div>
+  <script type="text/javascript">
+    (function (p,o,s,t,m,a,n) {
+      !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+      !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+        (n = o.createElement("script")),
+        (n.id = s+t), (n.async = 1), (n.src = m), n
+      ));
+    }(window, document, "\_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+  </script>
+
+        </section>
+      </section>
 
 <section>
         <section>
-          <h2>Authorization and authentication</h2>
+          <h2>3. Authorization and authentication</h2>
           <img src="media/vectors/nonref-docs-preso_authenticationauthorization.svg"/>
         </section>
         <section>
           <h3>API Key</h3>
-          <figure><img src="media/vectors/nonref-docs-preso_apikey.svg"/></a><figcaption><small>Examples: <a href="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html">Sendgrid</a></small></figcaption></figure>
+          <figure><img src="media/vectors/nonref-docs-preso_apikey.svg"/></a><figcaption><small>Examples: <a target="_blank" href="https://sendgrid.com/docs/User_Guide/Settings/api_keys.html">Sendgrid</a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
@@ -184,7 +217,9 @@
 
         <section>
           <h3>HMAC</h3>
-          <img src="media/vectors/nonref-docs-preso_hmac.svg"/>
+          <figure><img src="media/vectors/nonref-docs-preso_hmac.svg"/><figcaption><small>Examples: <a target="_blank" href="https://docs.aws.amazon.com/AWSECommerceService/latest/DG/HMACSignatures.html">AWS</a></small></figcaption></figure>
+
+
           <aside class="notes">
             <ul>
               <li></li>
@@ -194,7 +229,7 @@
 
         <section>
           <h3>OAuth</h3>
-          <figure><img src="media/vectors/nonref-docs-preso_oauth.svg"/><figcaption><small>Examples: <a href="https://www.dropbox.com/developers/documentation/http/documentation#authorization">Dropbox</a> | <a href="https://developer.twitter.com/en/docs/basics/authentication/guides/authorizing-a-request">Twitter</a><a href="http://dev.bitly.com/authentication.html">Bitly</a></small></figcaption></figure>
+          <figure><img src="media/vectors/nonref-docs-preso_oauth.svg"/><figcaption><small>Examples: <a target="_blank" href="https://www.dropbox.com/developers/documentation/http/documentation#authorization">Dropbox</a> | <a target="_blank" href="https://developer.twitter.com/en/docs/basics/authentication/guides/authorizing-a-request">Twitter</a><a target="_blank" href="http://dev.bitly.com/authentication.html">Bitly</a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
@@ -205,8 +240,8 @@
       </section>
 
         <section>
-          <h2>Status and error codes</h2>
-          <figure><img src="media/vectors/nonref-docs-preso_statuserrorcodes.svg"/><figcaption><small>Examples: <a href="https://www.flickr.com/services/api/upload.api.html">Flickr</a> | <a href="https://clearbit.com/docs?python#errors">Clearbit</a> | <a href="https://developer.twitter.com/en/docs/basics/response-codes">Twitter</a> | <a href="http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/">Mailchimp</a></small></figcaption></figure>
+          <h2>4. Status and error codes</h2>
+          <figure><img src="media/vectors/nonref-docs-preso_statuserrorcodes.svg"/><figcaption><small>Examples: <a target="_blank" href="https://www.flickr.com/services/api/upload.api.html">Flickr</a> | <a target="_blank" href="https://clearbit.com/docs?python#errors">Clearbit</a> | <a target="_blank" href="https://developer.twitter.com/en/docs/basics/response-codes">Twitter</a> | <a target="_blank" href="http://developer.mailchimp.com/documentation/mailchimp/guides/error-glossary/">Mailchimp</a> | <a target="_blank" href="https://docs.context.io/#errors">Context.io</a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
@@ -215,8 +250,8 @@
         </section>
 
         <section>
-          <h2>Rate limiting and thresholds</h2>
-          <figure><img src="media/vectors/nonref-docs-preso_ratelimiting.svg"/></a><figcaption><small>Examples: <a href="https://developer.github.com/v3/#rate-limiting">GitHub</a> | <a href="https://developer.linkedin.com/docs/rest-api#component-section-headline">Linkedin</a> | <a href="http://dev.bitly.com/rate_limiting.html">Bitly</a></small></figcaption></figure>
+          <h2>5. Rate limiting and thresholds</h2>
+          <figure><img src="media/vectors/nonref-docs-preso_ratelimiting.svg"/></a><figcaption><small>Examples: <a target="_blank" href="https://developer.github.com/v3/#rate-limiting">GitHub</a> | <a target="_blank" href="https://developer.linkedin.com/docs/rest-api#component-section-headline">Linkedin</a> | <a target="_blank" href="http://dev.bitly.com/rate_limiting.html">Bitly</a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
@@ -225,8 +260,8 @@
         </section>
 
         <section>
-          <h2>Code samples and tutorials</h2>
-          <figure><img src="media/vectors/nonref-docs-preso_codetutorial.svg"/><figcaption><small>Examples: <a href="http://api.eventful.com/tools/tutorials/search">Eventful</a> | <a href="https://www.twilio.com/docs/quickstart">Twilio</a> | <a href="http://developer.mailchimp.com/documentation/mailchimp/guides/manage-subscribers-with-the-mailchimp-api/">Mailchimp</a></small></figcaption></figure>
+          <h2>6. Code samples and tutorials</h2>
+          <figure><img src="media/vectors/nonref-docs-preso_codetutorial.svg"/><figcaption><small>Examples: <a target="_blank" href="http://api.eventful.com/tools/tutorials/search">Eventful</a> | <a target="_blank" href="https://www.twilio.com/docs/quickstart">Twilio</a> | <a target="_blank" href="http://developer.mailchimp.com/documentation/mailchimp/guides/manage-subscribers-with-the-mailchimp-api/">Mailchimp</a> | <a target="_blank" href="https://console.bluemix.net/docs/services/conversation/tutorial.html#tutorial">IBM Cloud</a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
@@ -235,8 +270,8 @@
         </section>
 
         <section>
-          <h2>SDKs and sample apps</h2>
-          <figure><img src="media/vectors/nonref-docs-preso_sampleappsandsdks.svg"/><figcaption><small>Examples: <a href="https://developer.paypal.com/docs/api/quickstart/">Paypal</a> | <a href="https://devcenter.heroku.com/articles/pubnub#ruby-sdk-documentation">Heroku</a> | <a href="https://cloud.google.com/sdk/docs/">Google Cloud</a> | <a href="https://aws.amazon.com/tools/">Amazon</a> </small></figcaption></figure>
+          <h2>7. SDKs and sample apps</h2>
+          <figure><img src="media/vectors/nonref-docs-preso_sampleappsandsdks.svg"/><figcaption><small>Examples: <a target="_blank" href="https://developer.paypal.com/docs/api/quickstart/">Paypal</a> | <a target="_blank" href="https://devcenter.heroku.com/articles/pubnub#ruby-sdk-documentation">Heroku</a> | <a target="_blank" href="https://cloud.google.com/sdk/docs/">Google Cloud</a> | <a target="_blank" href="https://aws.amazon.com/tools/">Amazon</a> | <a target="_blank" href="http://docs.citygridmedia.com/display/citygridv2/Code+Samples">Citygrid</a> | <a target="_blank" href="https://console.bluemix.net/docs/services/conversation/sample-applications.html#sample-apps">IBM Cloud</a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
@@ -245,8 +280,8 @@
         </section>
 
         <section>
-          <h2>Quick reference</h2>
-          <figure><img src="media/vectors/nonref-docs-preso_quickreference.svg"/><figcaption><small>Examples: <a href="http://api.eventful.com/docs">Eventful</a> | <a href="http://cheat.markdunkley.com/">Shopify</a> | <a href="http://docs.parseplatform.org/rest/guide/#quick-reference">Parse</a></small></figcaption></figure>
+          <h2>8. Quick reference</h2>
+          <figure><img src="media/vectors/nonref-docs-preso_quickreference.svg"/><figcaption><small>Examples: <a target="_blank" href="http://api.eventful.com/docs">Eventful</a> | <a target="_blank" href="http://cheat.markdunkley.com/">Shopify</a> | <a target="_blank" href="http://docs.parseplatform.org/rest/guide/#quick-reference">Parse</a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
@@ -255,20 +290,21 @@
         </section>
 
         <section>
-          <h2>Best practices</h2>
-          <figure><img src="media/vectors/nonref-docs-preso_bestpractices.svg"/><figcaption><small>Examples: <a href=""></a></small></figcaption></figure>
-          <aside class="notes">
-            <ul>
-              <li></li>
-            </ul>
-          </aside>
+          <section>
+          <h2>9. Best practices</h2>
+          <figure><img src="media/vectors/nonref-docs-preso_bestpractices.svg"/><figcaption><small>Examples: <a target="_blank" href="https://apidocs.threatstack.com/v2/v2-documentation/time-ranges">Threat Stack</a> | <a target="_blank" href="http://developer.mailchimp.com/documentation/mailchimp/guides/mailchimp-api-best-practices/">Mailchimp</a> | <a target="_blank" href="https://developers.coinbase.com/api/v2#pagination">Coinbase</a></small></figcaption></figure>
+        </section>
+
+          <section>
+            <h3>Sample best practice topics</h3>
+          <p>pagination, time ranges, fault tolerance, cache values, connectivity, timeouts, downtime, SSL, versions, testing and validation, exports, languages, number handling, expanding resources, notifications, etc.</p>
         </section>
 
         </section>
 
         <!-- <section>
           <h2>Troubleshooting</h2>
-          <figure><img src="media/vectors/nonref-docs-preso_troubleshooting.svg"/><figcaption><small>Examples: <a href=""></a></small></figcaption></figure>
+          <figure><img src="media/vectors/nonref-docs-preso_troubleshooting.svg"/><figcaption><small>Examples: <a target="_blank" href=""></a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
@@ -277,8 +313,8 @@
         </section> -->
 
         <section>
-          <h2>Glossary</h2>
-          <figure><img src="media/vectors/nonref-docs-preso_glossary.svg"/><figcaption><small>Examples: <a href="https://developer.lyft.com/docs/glossary">Lyft</a> | <a href="http://developer.yext.com/docs/glossary/">Yext</a> | <a href="https://docs.apigee.com/api-services/reference/glossary">Apigee</a></small></figcaption></figure>
+          <h2>10. Glossary</h2>
+          <figure><img src="media/vectors/nonref-docs-preso_glossary.svg"/><figcaption><small>Examples: <a target="_blank" href="https://developer.lyft.com/docs/glossary">Lyft</a> | <a target="_blank" href="http://developer.yext.com/docs/glossary/">Yext</a> | <a target="_blank" href="https://docs.apigee.com/api-services/reference/glossary">Apigee</a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
@@ -287,8 +323,8 @@
         </section>
 
         <section>
-          <h2>FAQ</h2>
-          <figure><img src="media/vectors/nonref-docs-preso_faq.svg"/><figcaption><small>Examples: <a href="https://api.smugmug.com/api/v2/doc/tutorial/oauth/faq.html">Smugmug</a> | <a href="http://developer.nytimes.com/faq">NYTimes</a></small></figcaption></figure>
+          <h2>11. FAQ</h2>
+          <figure><img src="media/vectors/nonref-docs-preso_faq.svg"/><figcaption><small>Examples: <a target="_blank" href="https://api.smugmug.com/api/v2/doc/tutorial/oauth/faq.html">Smugmug</a> | <a target="_blank" href="http://developer.nytimes.com/faq">NYTimes</a></small></figcaption></figure>
           <aside class="notes">
             <ul>
               <li></li>
@@ -321,7 +357,7 @@
         </section>
         <!-- <section>
           <h2>Credits</h2>
-          <p>Some graphics by: <a href="https://www.vecteezy.com">Vecteezy.com</a> and the <a href="https://thenounproject.com/">Noun Project</a>.</p>
+          <p>Some graphics by: <a target="_blank" href="https://www.vecteezy.com">Vecteezy.com</a> and the <a target="_blank" href="https://thenounproject.com/">Noun Project</a>.</p>
         </section> -->
         <script src="lib/js/head.min.js"></script>
         <script src="js/reveal.js"></script>
